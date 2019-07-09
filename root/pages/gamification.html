@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MindWell</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/*general styling*/
+body {
+  font-family: Arial;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-color: #AEC6CF
+}
+
+/*topnav*/
+.topnav {
+  overflow: hidden;
+  background-color: #333333;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*columns*/
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 58px;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.left {
+  left: 0;
+  background-color: #77C2AE;
+}
+.right {
+  right: 0;
+  background-color: #21A7CC;
+}
+
+/*centers content*/
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+</style>
+</head>
+
+<body>
+<div class="topnav">
+    <a href="../index.html", style="float: left">MindWell</a>
+    <a href="chatbot.html">Chatbot</a>
+    <a href="gamification.html">Gamification</a>
+    <a href="modules.html">Modules</a>
+</div>  
+
+<script src='https://zimjs.org/cdn/1.2.0/createjs_min.js'></script>
+	
+<script src='https://zimjs.org/cdn/10.5.2/zim.js'></script>
+	
+<script src='https://d309knd7es5f10.cloudfront.net/codepen/icon4.js'></script>
+
+
+	<script  src="../scripts/lifeStar.js">
+</script>
+</body>
+</html> 

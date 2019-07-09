@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MindWell</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/*general styling*/
+body {
+  font-family: Arial;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/*topnav*/
+.topnav {
+  overflow: hidden;
+  background-color: #333333;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*columns*/
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 58px;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.left {
+  left: 0;
+  background-color: #ffd1dc;
+}
+.right {
+  right: 0;
+  background-color: #AEC6CF;
+}
+
+/*centers content*/
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+</style>
+</head>
+
+<body>
+<div class="topnav">
+    <a href="index.html", style="float: left">MindWell</a>
+    <a href="pages/chatbot.html">Chatbot</a>
+    <a href="pages/gamification.html">Gamification</a>
+    <a href="pages/modules.html">Modules</a>
+</div>
+
+<a href="pages/chatbot.html">
+	<div class="split left">
+  
+  		<div class="centered">
+    			<img src="images/robot.png" alt="Chatbot">
+    			<h2>Chatbot</h2>
+    			<ul>
+    				<li>I need someone to guide me!</li>
+    			</ul>
+  		</div>
+	</div>
+</a>
+
+<a href="pages/gamification.html">
+	<div class="split right" class= "hello">
+  		<div class="centered">
+    			<img src="images/controller.png" alt="Gamification">
+    			<h2>Gamification</h2>
+    			<ul>
+    				<li>I need to clear my mind!</li>
+    			</ul>
+  		</div>
+	</div>
+</a>
+</body>
+</html> 
