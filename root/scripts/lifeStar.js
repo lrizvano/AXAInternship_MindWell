@@ -83,13 +83,13 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
 					// and only call if it is a different planet than our currentPlanet
 					if (message.text != " " && planet!=currentPlanet) {
 						// here is the API call and we insert the planet num
-						var api = `https://swapi.co/api/planets/${planet.num}/?format=json`;
+						var api = `C:/Users/R66579/Documents/MindWell/root/test/planetList${planet.num}`;
 						// ZIM async() uses JSONp 
 						// the api returns JSON not JSONp so filter it through a PHP script 
 						// You can too - or a sample PHP script is at the bottom of the code
 						// JSONp needs a callback and async requires a dot between async and the callback 
 						// we also must pass the real reference to the function as the second parameter
-						async(`https://zimjs.org/cdn/jsonp.php?api=${api}&callback=async.planetInfo`, planetInfo);
+						//async(`https://zimjs.org/cdn/jsonp.php?api=${api}&callback=async.planetInfo`, planetInfo);
 						message.text = " "; // use a " " to know we are waiting
 						terrain.text = ""; // also clear terrain text
 						dataShield = timeout(500, ()=>{
@@ -121,7 +121,7 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
 	function planetInfo(data) {
 		// zog(data)
 		if (dataShield) dataShield.clear();
-		message.text = data.name;
+		message.text = "data.name";
 		terrain.text = data.terrain;
 		infoBox.animate({alpha:1}, 500);
 	}	
