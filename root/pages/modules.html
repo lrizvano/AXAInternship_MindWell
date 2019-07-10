@@ -4,6 +4,23 @@
 <title>MindWell</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+/*topnav*/
+.topnav {
+  overflow: hidden;
+  background-color: #333333;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 @import 'https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i';
 
 body
@@ -17,6 +34,7 @@ body
 }
 .main
 {
+  top: 50px;
   width:100%;
   overflow: hidden;
 }
@@ -74,7 +92,7 @@ body
   
 width: 32%;
     z-index: 66666;
-  border-left: 5px solid #ef5023;
+  border-left: 5px solid blue;
     .title-content>p
 {
  display:block; 
@@ -113,7 +131,7 @@ width: 32%;
     left: 22%;
     width: 32%;
     z-index: 777;
-    border-left: 5px solid #ef5023;
+    border-left: 5px solid blue;
       .title-content>p
 {
  display:block; 
@@ -153,7 +171,7 @@ https://s3.amazonaws.com/q-site/test/IMG_2910.jpg);
     left: 47%;
     width: 32%;
     z-index: 777;
-    border-left: 5px solid #ef5023;
+    border-left: 5px solid blue;
       .title-content>p
 {
  display:block; 
@@ -191,7 +209,7 @@ https://s3.amazonaws.com/q-site/test/IMG_2910.jpg);
 .main>section:nth-child(4):hover {
     left: 67%;
     width: 32%;
-    border-left: 5px solid #ef5023;
+    border-left: 5px solid blue;
   .title-content>p
 {
  display:block; 
@@ -281,75 +299,42 @@ body {
   background-color: #ddd;
   color: black;
 }
-
-/*columns*/
-.split {
-  height: 100%;
-  width: 25%;
-  position: fixed;
-  z-index: 1;
-  top: 58px;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-.first {
-  left: 0%;
-  background-color: #168FE2;
-}
-.second {
-  left: 25%;
-  background-color: #33FFDD;
-}
-.third {
-  left: 50%;
-  background-color: #16C6E2;
-}
-.fourth {
-  left: 75%;
-  background-color: #16E2B4;
-}
-
-/*centers content*/
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.centered img {
-  width: 150px;
-  border-radius: 50%;
-}
 </style>
 </head>
 
 <body>
-<div class="main">
+<div class="topnav">
+    <a href="../index.html", style="float: left">MindWell</a>
+    <a href="chatbot.html">Chatbot</a>
+    <a href="gamification.html">Gamification</a>
+    <a href="modules.html">Modules</a>
+</div>  
+
+<div class="main"> 
   <section id="first"  >
     <div class="title-content">
-      <h2>Rapid Prototyping</h2>
+	    <h2><a href="https://codepen.io/danzen/pen/gNKQYY">Define</a></h2>
       <p>the Google[x] radically accelerated (10x-100x) development framework; developed by Tom Chi, cofounder of Google[x] and our advisor</p>
     </div>
   </section >
     <section id="second"  >
        <div class="title-content">
-      <h2>Next Generation Technology</h2>
+	       <h2><a href="">Discover</a></h2>
          <p>machine learning & AI, internet of things, VR, augmented reality, drones, robotics</p>
     </div>
   </section>
     <section id="third"  >
        <div class="title-content">
-      <h2>Design Thinking</h2>
-         <p>Design Thinking
-Stanford Design School methodology is at the core of our design thinking methodology</p>
+	       <h2><a href="">Develop</a></h2>
+         <p>Design Thinking Stanford Design School methodology is at the core of our design thinking methodology</p>
     </div>
   </section>
     <section id="forth"  >
        <div class="title-content">
-      <h2>Feature-Driven Agile</h2>
+	       <h2><a href="">Demonstrate</a></h2>
          <p>feature-focused teams build and deliver functionality in 3-week Agile iterations</p>
     </div>
   </section>
+ </div>
 </body>
 </html> 
