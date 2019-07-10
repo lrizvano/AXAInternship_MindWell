@@ -125,7 +125,7 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
 		terrain.text = data.terrain;
 		infoBox.animate({alpha:1}, 500);
 	}	
-	
+
 	// make intro
 	new Label({
 		text:"PRESS THE PLANETS!",
