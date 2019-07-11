@@ -120,17 +120,22 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
 
 	// this gets called by async when data is returned
 	function planetInfo(data) {		
-		var phrases = ["We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "told", "me", "the", "world", "is", "gonna", "roll", "me", "I", "aint", "the", "sharpest", "tool", "in", "the", "shead", "she", "was", "looing", "kinda", "dumb", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose.", "We believe our business serves a noble purpose."];		
+		var phrases = ["Our buisness serves a noble purposes", "We are stewards of this business for generations to come", "We aspire to be experts in our passions", "Think big and find innovative ways to enhance the value of our business", "We do the right thing for our clients, our shareholders and our communities", "We operate with strong financial rigor and risk discipline to maximize shareholder value", "We are curious and constantly learning", "We take pride in who we are and what we do", "We work to earn the trust of our clients every day, so they can live their lives with confidence", "We treat every client's dream as if it were our own and put their interest first", "We deliver on our commitments with the utmost integrity", "We strengthen the communities in which we live and work", "We respect our collegeages and partners and treat them as we would want to be treated", "We work with humility and focus on solutions, not our egos", "We work with good grace and humor and do not tolerate unkindness", "We inspire each other to be the best we can", "We want to work with great people", "We value people from diverse backgrounds", "We set challenging goals for ourselves and take personal accountibility", "We all have a voice but once the decision is made we excute with skill and energy as one team", "looing", "kinda", "dumb", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey"]; 
+
+
+var titles = ["passion", "passion", "passsion", "passion", "highest standards", "highest standards", "highest standards", "highest standards", "trusted partner", "trusted partner", "trusted partner", "trusted partner", "respect and dignity", "respect and dignity", "respect and dignity", "respect and dignity", "stronger as a team", "stronger as a team", "stronger as a team", "stronger as a team", "looing", "kinda", "dumb", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey"];		
+
+		var arr = Math.floor(Math.random() * 60); 
 
 		if (dataShield) dataShield.clear();
-		message.text = phrases[Math.floor(Math.random() * 60)];
-		terrain.text = data.terrain;
+		message.text = phrases[arr];
+		terrain.text = titles[arr];
 		infoBox.animate({alpha:1}, 10);
 	}	
 
 	// make intro
 	new Label({
-		text:"PRESS THE PLANETS!",
+		text:"Click to Explore Nodes!",
 		color:tin,
 		align:"center",
 		valign:"center",
@@ -146,8 +151,8 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
 
 	// FOOTER
 	// call remote script to make ZIM Foundation for Creative Coding icon
-	var icon;  
-	createIcon(30,30,button=>{icon=button.sca(.7).pos(30,30,true,true);}); 
+	//var icon;  
+	//createIcon(30,30,button=>{icon=button.sca(.7).pos(30,30,true,true);}); 
 
 	// in full mode we are responsible for scaling and positioning 
 	// as the frame resizes - in "fit" mode we don't need to worry
