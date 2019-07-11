@@ -95,6 +95,7 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
 						dataShield = timeout(500, ()=>{
 							// in case data is down - or sluggish
 							terrain.text = "...shields are up...";
+
 						});
 						currentPlanet = planet.top(); // move planet to top
 						planet.uncache(); // we will add highlight and infoBox to planet so uncache
@@ -118,12 +119,13 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
 	});
 
 	// this gets called by async when data is returned
-	function planetInfo(data) {
-		// zog(data)
+	function planetInfo(data) {		
+		var phrases = ["somebody", "hey", "told", "me", "the", "world", "is", "gonna", "roll", "me", "I", "aint", "the", "sharpest", "tool", "in", "the", "shead", "she", "was", "looing", "kinda", "dumb", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey", "hey"];		
+
 		if (dataShield) dataShield.clear();
-		message.text = "apple";
+		message.text = phrases[Math.floor(Math.random() * 60)];
 		terrain.text = data.terrain;
-		infoBox.animate({alpha:1}, 75);
+		infoBox.animate({alpha:1}, 10);
 	}	
 
 	// make intro
