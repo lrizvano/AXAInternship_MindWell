@@ -34,33 +34,127 @@ a {
 }
 
 /*split content*/
-.split {
+:root {
+  	--container-bg-color: #333;
+  	--left-bg-color: rgba(248, 183, 205, 0.7);
+  	--left-button-hover-color: rgba(161, 11, 11, 0.3);
+  	--right-bg-color: rgba(103, 163, 217, 0.8);
+  	--right-button-hover-color: rgba(92, 92, 92, 0.3);
+  	--hover-width: 60%;
+  	--other-width: 40%;
+  	--speed: 1000ms;
+}
+html, body {
+  	padding:0;
+  	margin:0;
+  	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  	width: 100%;
   	height: 100%;
-  	width: 50%;
-  	position: fixed;
-  	z-index: 1;
-  	top: 58px;
   	overflow-x: hidden;
-  	padding-top: 20px;
 }
-.left {
-  	left: 0;
-  	background-color: #ffd1dc;
-}
-.right {
-  	right: 0;
-  	background-color: #AEC6CF;
-}
-.centered {
+h1 {
+  	font-size: 4rem;
+  	color: #fff;
   	position: absolute;
-  	top: 50%;
   	left: 50%;
-  	transform: translate(-50%, -50%);
-  	text-align: center;
+  	top: 20%;
+  	transform: translateX(-50%);
+  	white-space: nowrap;
 }
-.centered img {
-  width: 150px;
-  border-radius: 50%;
+.button {
+  	display: block;
+  	position: absolute;
+  	left: 50%;
+  	top: 40%;
+  	height: 2.5rem;
+  	padding-top: 1.3rem;
+  	width: 15rem;
+  	text-align: center;
+  	color: #fff;
+  	border: #fff solid 0.2rem;
+  	font-size: 1rem;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	text-decoration: none;
+  	transform: translateX(-50%);
+}
+.split.left .button:hover {
+ 	background-color: var(--left-button-hover-color);
+ 	border-color: var(--left-button-hover-color);
+}
+.split.right .button:hover {
+  	background-color: var(--right-button-hover-color);
+  	border-color: var(--right-button-hover-color);
+}
+.container {
+  	position: relative;
+  	width: 100%;
+  	height: 100%;
+  	background: var(--container-bg-color);
+}
+.split {
+  	position: absolute;
+  	width: 50%;
+  	height: 100%;
+  	overflow: hidden;
+}
+.split.left {
+  	left:0;
+  	background: url('https://image.ibb.co/m56Czw/designer.jpg') center center no-repeat;
+  	background-size: cover;
+}
+.split.left:before {
+  	position:absolute;
+  	content: "";
+  	width: 100%;
+  	height: 100%;
+  	background: var(--left-bg-color);
+}
+.split.right {
+  	right:0;
+  	background: url('https://image.ibb.co/m3ZbRb/programmer.png') center center no-repeat;
+  	background-size: cover;
+}
+.split.right:before {
+  	position:absolute;
+  	content: "";
+  	width: 100%;
+  	height: 100%;
+  	background: var(--right-bg-color);
+}
+.split.left, .split.right, .split.right:before, .split.left:before {
+  	transition: var(--speed) all ease-in-out;
+}
+.hover-left .left {
+  	width: var(--hover-width);
+}
+.hover-left .right {
+  	width: var(--other-width);
+}
+.hover-left .right:before {
+  	z-index: 2;
+}
+.hover-right .right {
+  	width: var(--hover-width);
+}
+.hover-right .left {
+  	width: var(--other-width);
+}
+.hover-right .left:before {
+  	z-index: 2;
+}
+@media(max-width: 800px) {
+  	h1 {
+    		font-size: 2rem;
+  	}
+  	.button {
+    	width: 12rem;
+  	}
+}
+@media(max-height: 700px) {
+  	.button {
+    		top: 70%;
+  	}
 }
 </style>
 </head>
@@ -73,24 +167,18 @@ a {
     <a href="pages/modules.html">Modules</a>
 </div>
 
-<a href="pages/chatbot.html">
-	<div class="split left">
-  		<div class="centered">
-    			<img src="images/robot.png" alt="Chatbot">
-    			<h1>Chatbot</h1>
-    			<p>I need someone to guide me!</p>
-  		</div>
-	</div>
-</a>
+<div class="container">
+ 	<div class="split left">
+    		<h1>Chatbot</h1>
+    		<a href="#" class="button">Read More</a>
+  	</div>
+  
+	<div class="split right">
+    		<h1>Game</h1>
+    		<a href="#" class="button">Read More</a>
+  	</div>
+</div>
 
-<a href="pages/game.html">
-	<div class="split right" class= "hello">
-  		<div class="centered">
-    			<img src="images/controller.png" alt="Gamification">
-    			<h1>Game</h1>
-    			<p>I need to clear my mind!</p>
-  		</div>
-	</div>
-</a>
+<script  src="scripts/splitPage.js"></script>
 </body>
 </html> 
