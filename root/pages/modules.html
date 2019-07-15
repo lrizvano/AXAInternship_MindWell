@@ -4,288 +4,227 @@
 <title>MindWell</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-/*topnav*/
-.topnav {
-  overflow: hidden;
-  background-color: #333333;
-}
-.topnav a {
-  float: right;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px 16px;
-}
-.topnav a:hover {
-  background-color: #ddd;
-  color: #333333;
-}
-
-@import 'https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i';
-
-body
-{
-    color: #fff;
-    background: #333333;
-    font-size: .9em;
-    font-weight: 300;
-    overflow: hidden;
-    font-family: 'Raleway', sans-serif;
+/*general styling*/
+body {
+  	font-family: Arial;
+  	color: white;
+  	margin: 0;
+  	padding: 0;
+  	background-color: #333333;
 }
 a {
 	color: white;
 }
 
-.main
-{
-  top: 50px;
-  width:100%;
-  overflow: hidden;
-}
-
-.container, body, html
-{
-  height:100%;
-  margin:0;
-}
-
-.main, .main>section
-{
-  position:absolute;
-  height:100%;
-}
-
-.main>section
-{
-  width:25%;
-  -webkit-transition: all .3s ease-in-in;
-  -moz-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-}
-
-.main>section:first-child
-{
-    top: 0;
-    left: 0;
-  background-color:#111;
-    -ms-transform: skew(-10deg, 0deg);
-    -webkit-transform: skew(-10deg, 0deg);
-    transform: skew(-10deg, 0deg);
-    border-right: 5px solid #333333;
-}
-.main>section:first-child:after
-{
-  content : "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #ffd1dc;
-    background-size: cover;
-  background-position: center center;
-  z-index: -1;
-  width:100%;
-  height:100%;
-}
-.main>section:first-child:hover
-{
-  
-width: 32%;
-    z-index: 66666;
-  border-left: 5px solid #333333;
-    .title-content>p
-{
- display:block; 
-}
-}
-
-.main>section:nth-child(2) {
-    top: 0;
-    left: 25%;
-  background-color:#111;
-    -ms-transform: skew(-10deg, 0deg);
-    -webkit-transform: skew(-10deg, 0deg);
-    transform: skew(-10deg, 0deg);
-        border-right: 5px solid #333333;
-    border-left: 5px solid #333333;
-}
-.main>section:nth-child(2):after
-{
-  content : "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #AEC6CF;
-    background-size: cover;
-  background-position: center center;
-  z-index: -1;
-  width:100%;
-  height:100%;
-}
-.main>section:nth-child(2):hover {
-    left: 22%;
-    width: 32%;
-    z-index: 777;
-    border-left: 5px solid #333333;
-      .title-content>p
-{
- display:block; 
-}
-}
-
-.main>section:nth-child(3) {
-    left: 50%;
-  background-color:#111;
-    -ms-transform: skew(-10deg, 0deg);
-    -webkit-transform: skew(-10deg, 0deg);
-    transform: skew(-10deg, 0deg);
-
-    border-right: 5px solid #333333;
-    border-left: 5px solid #333333;
-}
-.main>section:nth-child(3):after
-{
-  content : "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #ffd1dc;    
-    background-size: cover;
-  background-position: center center;
-  z-index: -1;
-  width:100%;
-  height:100%;
-}
-.main>section:nth-child(3):hover {
-    left: 47%;
-    width: 32%;
-    z-index: 777;
-    border-left: 5px solid #333333;
-      .title-content>p
-{
- display:block; 
-}
-}
-
-.main>section:nth-child(4) {
-    left: 75%;
-  background-color:#111;
-    -ms-transform: skew(-10deg, 0deg);
-    -webkit-transform: skew(-10deg, 0deg);
-    transform: skew(-10deg, 0deg);
-
-    border-right: 5px solid #333333;
-    border-left: 5px solid #333333;
-}
-.main>section:nth-child(4):after
-{
-  content : "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #AEC6CF;    
-    background-size: cover;
-  background-position: center center;
-  z-index: -1;
-  width:100%;
-  height:100%;
-}
-.main>section:nth-child(4):hover {
-    left: 67%;
-    width: 32%;
-    border-left: 5px solid #333333;
-  .title-content>p
-{
- display:block; 
-}
-}
-
-.title-content
-{
-   
-   -ms-transform: skew(10deg, 0deg);
-    -webkit-transform: skew(10deg, 0deg);
-    transform: skew(10deg, 0deg);
-    position: relative;
-    text-align:center;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-
-}
-.title-content>h2
-{
-   padding:0 20px;
-  text-transform:uppercase;
-    font-size: 32px;
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 16px;
-
-}
-
-.title-content>p
-{
- display:none;
-  position:absolute;
-  margin-top:100px;
-  font-size:16px;
-  width:250px;
-  -webkit-transition: all .3s ease-in-in;
-  -moz-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-
- 
-}
-
-/*general styling*/
-body {
-  font-family: Arial;
-  color: white;
-  margin: 0;
-  padding: 0;
-  background-color: #333333;
-}
-
 /*topnav*/
 .topnav {
-  overflow: hidden;
-  background-color: #333333;
+  	overflow: hidden;
+  	background-color: #333333;
 }
 .topnav a {
-  float: right;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px 16px;
+  	float: right;
+  	display: block;
+  	color: white;
+  	text-align: center;
+  	padding: 20px 16px;
 }
 .topnav a:hover {
-  background-color: #ddd;
-  color: #333333;
+  	background-color: #ddd;
+  	color: #333333;
+}
+
+/*4 sections*/
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i';
+.main {
+  	top: 50px;
+  	width:100%;
+  	overflow: hidden;
+}
+.container, body, html {
+  	height:100%;
+  	margin:0;
+}
+.main, .main>section {
+  	position:absolute;
+  	height:100%;
+}
+.main>section {
+  	width:25%;
+  	-webkit-transition: all .3s ease-in-in;
+  	-moz-transition: all .3s ease-in;
+  	transition: all .3s ease-in;
+}
+.main>section:first-child {
+    	top: 0;
+    	left: 0;
+  	background-color:#111;
+    	-ms-transform: skew(-10deg, 0deg);
+    	-webkit-transform: skew(-10deg, 0deg);
+    	transform: skew(-10deg, 0deg);
+    	border-right: 5px solid #333333;
+}
+.main>section:first-child:after {
+  	content : "";
+    	display: block;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	background-color: #ffd1dc;
+    	background-size: cover;
+  	background-position: center center;
+  	z-index: -1;
+  	width:100%;
+  	height:100%;
+}
+.main>section:first-child:hover {  
+	width: 32%;
+    	z-index: 66666;
+  	border-left: 5px solid #333333;
+    	.title-content>p {
+		display:block; 
+	}
+}
+.main>section:nth-child(2) {
+    	top: 0;
+    	left: 25%;
+  	background-color:#111;
+    	-ms-transform: skew(-10deg, 0deg);
+    	-webkit-transform: skew(-10deg, 0deg);
+    	transform: skew(-10deg, 0deg);
+       	border-right: 5px solid #333333;
+    	border-left: 5px solid #333333;
+}
+.main>section:nth-child(2):after {
+  	content : "";
+    	display: block;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	background-color: #AEC6CF;
+    	background-size: cover;
+  	background-position: center center;
+  	z-index: -1;
+  	width:100%;
+  	height:100%;
+}
+.main>section:nth-child(2):hover {
+    	left: 22%;
+    	width: 32%;
+    	z-index: 777;
+    	border-left: 5px solid #333333;
+      	.title-content>p {
+ 	display:block; 
+	}
+}
+.main>section:nth-child(3) {
+    	left: 50%;
+  	background-color:#111;
+    	-ms-transform: skew(-10deg, 0deg);
+    	-webkit-transform: skew(-10deg, 0deg);
+    	transform: skew(-10deg, 0deg);
+    	border-right: 5px solid #333333;
+    	border-left: 5px solid #333333;
+}
+.main>section:nth-child(3):after {
+  	content : "";
+    	display: block;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	background-color: #ffd1dc;    
+    	background-size: cover;
+  	background-position: center center;
+  	z-index: -1;
+  	width:100%;
+  	height:100%;
+}
+.main>section:nth-child(3):hover {
+    	left: 47%;
+    	width: 32%;
+    	z-index: 777;
+    	border-left: 5px solid #333333;
+      	.title-content>p {
+ 	display:block; 
+	}
+}
+.main>section:nth-child(4) {
+    	left: 75%;
+  	background-color:#111;
+    	-ms-transform: skew(-10deg, 0deg);
+    	-webkit-transform: skew(-10deg, 0deg);
+    	transform: skew(-10deg, 0deg);
+    	border-right: 5px solid #333333;
+    	border-left: 5px solid #333333;
+}
+.main>section:nth-child(4):after {
+  	content : "";
+    	display: block;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	background-color: #AEC6CF;    
+    	background-size: cover;
+  	background-position: center center;
+  	z-index: -1;
+  	width:100%;
+  	height:100%;
+}
+.main>section:nth-child(4):hover {
+    	left: 67%;
+    	width: 32%;
+    	border-left: 5px solid #333333;
+  	.title-content>p {
+ 		display:block; 
+	}
+}
+.title-content {
+   	-ms-transform: skew(10deg, 0deg);
+    	-webkit-transform: skew(10deg, 0deg);
+    	transform: skew(10deg, 0deg);
+    	position: relative;
+    	text-align:center;
+    	width: 100%;
+    	height: 100%;
+    	opacity: 1;
+    	display: -webkit-box;
+    	display: -moz-box;
+    	display: -ms-flexbox;
+    	display: -webkit-flex;
+    	display: flex;
+    	-webkit-flex-direction: column;
+    	-ms-flex-direction: column;
+    	flex-direction: column;
+    	-webkit-flex-wrap: wrap;
+    	-ms-flex-wrap: wrap;
+    	flex-wrap: wrap;
+    	-webkit-box-pack: center;
+    	-moz-box-pack: center;
+    	-webkit-justify-content: center;
+    	-ms-flex-pack: center;
+    	justify-content: center;
+    	-webkit-box-align: center;
+    	-moz-box-align: center;
+    	-webkit-align-items: center;
+    	-ms-flex-align: center;
+    	align-items: center;
+}
+.title-content>h2 {
+   	padding:0 20px;
+  	text-transform:uppercase;
+    	font-size: 32px;
+    	font-weight: 300;
+    	margin-top: 0;
+    	margin-bottom: 16px;
+}
+.title-content>p {
+ 	display:none;
+  	position:absolute;
+  	margin-top:100px;
+  	font-size:16px;
+  	width:250px;
+  	-webkit-transition: all .3s ease-in-in;
+  	-moz-transition: all .3s ease-in;
+  	transition: all .3s ease-in;
 }
 </style>
 </head>

@@ -6,84 +6,85 @@
 <style>
 /*general styling*/
 body {
-  font-family: Arial;
-  color: white;
-  margin: 0;
-  padding: 0;
-  background-color: #333333;
+  	font-family: Arial;
+  	color: white;
+  	margin: 0;
+  	padding: 0;
+  	background-color: #333333;
 }
 
 /*topnav*/
 .topnav {
-  overflow: hidden;
-  background-color: #333333;
+  	overflow: hidden;
+  	background-color: #333333;
 }
 .topnav a {
-  float: right;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px 16px;
+  	float: right;
+  	display: block;
+  	color: white;
+ 	text-align: center;
+  	padding: 20px 16px;
 }
 .topnav a:hover {
-  background-color: #ddd;
-  color: #333333;
+  	background-color: #ddd;
+  	color: #333333;
 }
 
+/*easy tabs*/
 *,:after,:before{
-    padding:0;
-    margin:0;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box
+    	padding:0;
+    	margin:0;
+    	-webkit-box-sizing:border-box;
+    	-moz-box-sizing:border-box;
+    	box-sizing:border-box
 }
 html, body {
-  font-family: 'Open Sans', sans-serif;
-  background-color:#ffd1dc;
-  color:#f0f0f0;
+  	font-family: 'Open Sans', sans-serif;
+  	background-color:#ffd1dc;
+  	color:#f0f0f0;
 }
 h1 { 
-  font-size:100px;
-  text-align:center;
-  margin-top:50px;
+  	font-size:100px;
+  	text-align:center;
+  	margin-top:50px;
 }
 .tabs {
-  list-style-type:none;
-  width:100%;
-  max-width:980px;
-  margin:50px auto 0;
+  	list-style-type:none;
+  	width:100%;
+  	max-width:980px;
+  	margin:50px auto 0;
 }
 .tabs li {
-  display:inline-block;
-  height:50px;
-  line-height:50px;
-  padding:0 40px;
-  border-left:1px solid #fff;
-  border-right:1px solid #fff;
-  border-top:1px solid #fff;
-  cursor:pointer;
+  	display:inline-block;
+  	height:50px;
+  	line-height:50px;
+  	padding:0 40px;
+  	border-left:1px solid #fff;
+  	border-right:1px solid #fff;
+  	border-top:1px solid #fff;
+  	cursor:pointer;
 }
 .tabs li.active {
-  background-color:#fff;
-  color:#ffd1dc;
+  	background-color:#fff;
+	color:#ffd1dc;
 }
 .content-wrapper {
-  width:100%;
-  max-width:980px;
-  position:relative;
-  margin:0 auto 100px;
+  	width:100%;
+  	max-width:980px;
+  	position:relative;
+  	margin:0 auto 100px;
 }
 .content-wrapper .tab-content {
-  width:100%;
-  min-height:100px;
-  background:#fff;
-  display:none;
+  	width:100%;
+  	min-height:100px;
+  	background:#fff;
+  	display:none;
 }
 .content-wrapper .tab-active {
-  display:table;
-  table-layout:fixed;
-  padding:20px;
-  color:#404040;
+  	display:table;
+  	table-layout:fixed;
+  	padding:20px;
+  	color:#404040;
 }
 </style>
 </head>
@@ -106,27 +107,24 @@ h1 {
 </ul>
 
 <section class="content-wrapper">
-  <section class="tab-content tab-active" id="tab-1">
-    <h2>Define</h2>
-
-We want to divergently explore as many opportunities for innovation as possible
- 
-  </section>
-  <section class="tab-content" id="tab-2">
-	<h2>Tab 2</h2>
-	Hi how are you doing blah lah.
-  </section>
-  <section class="tab-content" id="tab-3">
-	
- 
-<iframe width="940" height="800" frameborder="0" scrolling="no" src="https://axanorthamerica-my.sharepoint.com/personal/silas_adams_axa-equitable_com/_layouts/15/Doc.aspx?sourcedoc={5e7b597b-0b0a-4bee-aa5e-29748d5b2352}&action=embedview&wdAllowInteractivity=False&AllowTyping=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe> 
- 
-  </section>
-  <section class="tab-content" id="tab-4">4</section>
-</section>
+  	<section class="tab-content tab-active" id="tab-1">
+    		<h2>Define</h2>
+    		<p>We want to divergently explore as many opportunities for innovation as possible</p>
+  	</section>
+  	
+	<section class="tab-content" id="tab-2">
+		<h2>Tab 2</h2>
+		<p>Hi how are you doing blah lah.</p>
+  	</section>
+  
+	<section class="tab-content" id="tab-3">
+		<iframe width="940" height="800" frameborder="0" scrolling="no" src="https://axanorthamerica-my.sharepoint.com/personal/silas_adams_axa-equitable_com/_layouts/15/Doc.aspx?sourcedoc={5e7b597b-0b0a-4bee-aa5e-29748d5b2352}&action=embedview&wdAllowInteractivity=False&AllowTyping=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe> 
+ 	</section>
+  
+	<section class="tab-content" id="tab-4">4</section>
+	</section>
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
 <script src="../scripts/moduleTabs.js"></script>
 </body>
-</html> 
+</html>
