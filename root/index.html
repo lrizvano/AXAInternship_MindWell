@@ -6,59 +6,56 @@
 <style>
 /*general styling*/
 body {
-  font-family: Arial;
-  color: white;
-  margin: 0;
-  padding: 0;
+  	font-family: Arial;
+  	color: white;
+  	margin: 0;
+  	padding: 0;
 }
-
 a {
 	color: white;
 }
 
 /*topnav*/
 .topnav {
-  overflow: hidden;
-  background-color: #333333;
+  	overflow: hidden;
+  	background-color: #333333;
 }
 .topnav a {
-  float: right;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px 16px;
+  	float: right;
+  	display: block;
+  	color: white;
+  	text-align: center;
+  	padding: 20px 16px;
 }
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+ 	background-color: #ddd;
+  	color: black;
 }
 
-/*columns*/
+/*split content*/
 .split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 58px;
-  overflow-x: hidden;
-  padding-top: 20px;
+  	height: 100%;
+  	width: 50%;
+  	position: fixed;
+  	z-index: 1;
+  	top: 58px;
+  	overflow-x: hidden;
+  	padding-top: 20px;
 }
 .left {
-  left: 0;
-  background-color: #ffd1dc;
+  	left: 0;
+  	background-color: #ffd1dc;
 }
 .right {
-  right: 0;
-  background-color: #AEC6CF;
+  	right: 0;
+  	background-color: #AEC6CF;
 }
-
-/*centers content*/
 .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
 }
 .centered img {
   width: 150px;
@@ -71,31 +68,26 @@ a {
 <div class="topnav">
     <a href="index.html", style="float: left">MindWell</a>
     <a href="pages/chatbot.html">Chatbot</a>
-    <a href="pages/gamification.html">Gamification</a>
+    <a href="pages/game.html">Game</a>
     <a href="pages/modules.html">Modules</a>
 </div>
 
 <a href="pages/chatbot.html">
 	<div class="split left">
-  
   		<div class="centered">
     			<img src="images/robot.png" alt="Chatbot">
-    			<h2>Chatbot</h2>
-    			<ul>
-    				<li>I need someone to guide me!</li>
-    			</ul>
+    			<h1>Chatbot</h1>
+    			<p>I need someone to guide me!</p>
   		</div>
 	</div>
 </a>
 
-<a href="pages/gamification.html">
+<a href="pages/game.html">
 	<div class="split right" class= "hello">
   		<div class="centered">
     			<img src="images/controller.png" alt="Gamification">
-    			<h2>Gamification</h2>
-    			<ul>
-    				<li>I need to clear my mind!</li>
-    			</ul>
+    			<h1>Game</h1>
+    			<p>I need to clear my mind!</p>
   		</div>
 	</div>
 </a>
