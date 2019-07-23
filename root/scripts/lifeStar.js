@@ -142,7 +142,7 @@ var titles = ["EQH: passion", "EQH: passion", "passsion", "EQH: passion", "EQH: 
 
 	// make intro
 	new Label({
-		text:"Click to Explore Nodes!",
+		text:"Click to Explore Nodes",
 		color:tin,
 		align:"center",
 		valign:"center",
